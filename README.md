@@ -1,5 +1,6 @@
-# shadcn/ui monorepo template
+# I Regret This
 
+I regret this.
 This template is for creating a monorepo with shadcn/ui.
 
 ## Usage
