@@ -1,0 +1,27 @@
+meta {
+  name: GetSchedules
+  type: http
+  seq: 4
+}
+
+get {
+  url: http://localhost:8080/api/v1/schedules?page_size=10&page=1&sort_by=date_time&sort_order=asc
+  body: none
+  auth: inherit
+}
+
+params:query {
+  page_size: 10
+  page: 1
+  sort_by: date_time
+  sort_order: asc
+}
+
+body:json {
+  
+      "date": "2025-05-10T00:00:00Z",
+      "time": "2025-05-10T09:00:00Z",
+      "location": "Room 101, Building A"
+  }
+  
+}

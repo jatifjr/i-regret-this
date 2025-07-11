@@ -1,0 +1,23 @@
+meta {
+  name: UpdateSchedule
+  type: http
+  seq: 3
+}
+
+put {
+  url: http://localhost:8080/api/v1/schedules/:id
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id: 1
+}
+
+body:json {
+  {
+    "date_time": "2025-05-20T09:00:00Z",
+    "location": "Gedung B, Ruangan 2",
+    "quota": 30
+  }
+}
